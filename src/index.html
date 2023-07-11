@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+
+<body>
+    <h1>STS demo</h1>
+    <h2>두 문장간의 유사도를 pearson correlation으로 측정합니다</h2>
+    <div>snunlp/KR-ELECTRA-discriminator fine-tuning한 단일 모델을 사용합니다.</div>
+
+    <div>
+        <div>문장을 입력하세요</div>
+        <form action="/predict" method="post">
+            <input type="string" name="sentence1" value="{{ sentence1 }}" placeholder="문장1">
+            <input type="string" name="sentence2" value="{{ sentence2 }}" placeholder="문장2">
+            <input type="submit">
+        </form>
+    </div>
+</body>
+
+</html>

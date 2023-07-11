@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+
+<body>
+    <h1>STS demo</h1>
+    <h2>두 문장간의 유사도를 pearson correlation으로 측정합니다</h2>
+    <div>snunlp/KR-ELECTRA-discriminator fine-tuning한 단일 모델을 사용합니다.</div>
+
+    <h2>유사도</h2>
+    <div>0 ~ 5 사이의 값으로 나타납니다. 0에 가까울수록 유사도가 낮고, 5에 가까울수록 유사도가 높습니다.</div>
+    <div>결과 : {{ similarity }}</div>
+</body>
+
+</html>
